@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Animosity_Tracker/static/css/main.4d36167f.css",
+    "main.js": "/Animosity_Tracker/static/js/main.39ef25cd.js",
+    "index.html": "/Animosity_Tracker/index.html",
+    "main.4d36167f.css.map": "/Animosity_Tracker/static/css/main.4d36167f.css.map",
+    "main.39ef25cd.js.map": "/Animosity_Tracker/static/js/main.39ef25cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d36167f.css",
+    "static/js/main.39ef25cd.js"
+  ]
+}
