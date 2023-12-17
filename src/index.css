@@ -1,0 +1,208 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoony font */
+  background-color: #ffcc00; /* Bright Yellow background for a cartoony feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root {
+  width: 200vh; /* Adjusted width for a larger container */
+  max-width: 1200px; /* Set a maximum width if needed */
+  background-color: #ffe6cc; /* Light Peach background for the content */
+  border-radius: 20px; /* Rounded corners for the content */
+  overflow: hidden; /* Hide overflow content */
+  padding: 20px; /* Add padding for a cartoony touch */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #66ccff; /* Sky Blue background for navbar */
+  border-bottom: 1px solid #323232;
+  border-radius: 15px; /* Rounded corners for the navbar */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.right-nav h5 {
+  color: #ff6666; /* Coral color for text */
+  margin-right: 10px;
+}
+
+.addhabit-btn {
+  cursor: pointer;
+  color: #ffffff; /* White text for button */
+  background-color: #ff9933; /* Orange background for button */
+  padding: 8px 20px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Cartoony box shadow */
+}
+
+/* Habits and Habit styles */
+.habits {
+  width: 100%;
+}
+
+.habit {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #323232;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #ffcc99; /* Light Orange background for habits */
+  border-radius: 15px; /* Rounded corners for the habit */
+  transition: transform 0.3s ease-in-out; /* Cartoony scale animation on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.habit:hover {
+  transform: scale(1.05);
+}
+
+.habit-left i {
+  color: #ff9933; /* Orange color for icon */
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ff6666; /* Coral background for icon */
+  margin-right: 10px;
+}
+
+.day-complete {
+  color: #808080; /* Gray color for completion text */
+  font-size: small;
+}
+
+.habit-right {
+  display: flex;
+  align-items: center;
+}
+
+.log-btn {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ff6666; /* Coral background for button */
+  padding: 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+  color: #ffffff; /* White text for button */
+  border: none;
+  transition: color 0.3s ease-in-out; /* Cartoony color transition on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.log-btn:hover {
+  color: #ffcc99; /* Light Orange on hover */
+}
+
+.log-btn i {
+  margin-right: 5px;
+}
+
+.fa-trash {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #ff6666; /* Coral background for trash icon */
+  transition: background-color 0.3s ease-in-out; /* Cartoony background color transition on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.fa-trash:hover {
+  background-color: #ff3300; /* Darker Coral on hover */
+}
+
+/* WeekView styles */
+.days-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.day-container {
+  height: 100px;
+  width: 150px;
+  background-color: #ffcc99; /* Light Orange background for day container */
+  border-radius: 20px;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out; /* Cartoony scale animation on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.day-container:hover {
+  transform: scale(1.05);
+}
+
+.circle-icon {
+  font-size: 24px;
+  margin: 5px 11px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Cartoony color transition on hover */
+}
+
+.circle-icon.active {
+  color: #1a75ff; /* Blue color for active state */
+}
+.btn-back {
+  background-color: #ff9933; /* Orange background for the button */
+  color: #ffffff; /* White text for the button */
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out; /* Cartoony background color transition on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Cartoony box shadow */
+}
+
+.btn-back:hover {
+  background-color: #ffcc99; /* Light Orange on hover */
+}
+
+
+/* Animation for all components */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fadeIn animation to all components */
+* {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .habit,
+  .day-container {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 0 auto; /* Center the components */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for phones and smaller screens */
+  .habit,
+  .day-container {
+    width: 100%; /* Adjust width to full width for phones */
+    margin: 0 auto; /* Center the components */
+  }
+}
