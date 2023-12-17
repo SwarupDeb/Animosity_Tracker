@@ -11,7 +11,13 @@ Animosity Tracker is a cartoony habit-tracking website that helps you stay organ
 
 ## Screenshots
 
-[Include screenshots or GIFs showcasing different sections of your website.]
+#### Home Page
+
+<img width="960" alt="Animosity 1" src="https://github.com/SwarupDeb/Animosity_Tracker/assets/55588687/297156d1-de52-4d71-938c-62976224f2d9">
+
+#### WeekView Page
+<img width="960" alt="Animosity 2" src="https://github.com/SwarupDeb/Animosity_Tracker/assets/55588687/311a9a7a-1e60-45ed-933f-47c2e9a51500">
+
 
 ## Technologies Used
 
